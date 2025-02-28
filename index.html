@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
+    <title>Business promotion - Product</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -11,171 +19,146 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- #region header -->
-    <header>
-      <div class="container">
+    <header class="page-header">
+      <div class="container header-container">
         <nav class="header-nav">
-          <a class="logo" href="./index.html"
+          <a class="logo header-logo" href="./index.html"
             ><img
               src="./image/header/logo.svg"
-              alt="logo"
               width="40"
               height="36"
-            />Product
-          </a>
-
-          <ul class="header-nav-ul">
-            <li>
-              <a href="./index.html"
-                ><span class="page-selector">Product</span></a
-              >
+              alt="Logotype"
+            />Product</a
+          >
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link current" href="./index.html">Product</a>
             </li>
-            <li><a href="./pricing.html">Pricing</a></li>
-            <li><a href="./customers.html">Customers</a></li>
-            <li><a href="">Resources</a></li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./customers.html">Customers</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Resources</a>
+            </li>
           </ul>
         </nav>
-        <ul class="header-ul">
-          <li>
-            <a class="sign-in" href=""><span class="sign-in">Sign In</span></a>
+        <ul class="auth-list">
+          <li class="auth-item"><a class="auth-link" href="">Sign In</a></li>
+          <li class="auth-item">
+            <a class="auth-link auth-link-dark" href="">Sign Up</a>
           </li>
-          <li><a class="sign-up" href="">Sign Up</a></li>
         </ul>
       </div>
     </header>
+    <!-- #endregion header -->
     <main>
-      <!-- #end region header -->
       <!--#region hero-->
-      <section class="section hero">
-        <div class="container">
+      <section class="hero-section">
+        <div class="container hero-container">
           <div class="hero-content">
-            <h1 class="hero-main">Work at the speed of thought</h1>
-            <p>
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-subtitle">
               Tools, tutorials, design and innovation experts, all in one place!
               The most intuitive way to imagine your next user experience.
             </p>
-            <div class="hero-button">
-              <button class="button-get-started" type="button">
-                Get started
-              </button>
-              <button class="button-wach-video" type="button">
-                <svg
-                  width="16"
-                  height="18"
-                  viewBox="0 0 16 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M14.6744 7.25119C16.0472 8.01295 16.0472 9.98705 14.6744 10.7488L2.77489 17.3518C1.44185 18.0914 -0.195505 17.1275 -0.195505 15.6029V2.39705C-0.195505 0.872535 1.44185 -0.0914478 2.77489 0.648247L14.6744 7.25119Z"
-                    fill="#02897A"
-                  />
-                </svg>
-                <span>Watch the Video</span>
+
+            <div class="hero-wrp-buttons">
+              <button class="button" type="button">Get started</button>
+              <button class="hero-btn" type="button">
+                <span class="hero-btn-icon"></span>Watch the Video
               </button>
             </div>
           </div>
-          <div class=".hero-image-container">
-            <img
-              class="hero-image"
-              src="./image/main/hero-img.svg"
-              alt="hero-img"
-            />
-          </div>
+          <img
+            src="./image/main/hero-img.svg"
+            width="610"
+            height="555"
+            alt="people"
+          />
         </div>
       </section>
       <!-- #endregion Hero-->
       <!--#region product-->
-      <section class="section product">
-        <div class="container">
+      <section class="product-section">
+        <div class="container product-container">
           <h2>Product was Built Specifically for You</h2>
           <ul>
             <li>
               <div class="cursor-conteiner">
-                <img
-                  class="cursor color"
-                  src="./image/main/icon/cursor.svg"
-                  alt="cursor-icon"
-                />
+                <svg class="color cursor" width="11" height="18">
+                  <use href="./image/sprite/icons.svg#icon-cursor"></use>
+                </svg>
               </div>
               <h3>First click tests</h3>
               <p>While most people enjoy casino gambling ,</p>
             </li>
             <li>
               <div class="cursor-conteiner">
-                <img
-                  class="figa color"
-                  src="./image/main/icon/figa.svg"
-                  alt="figa-icon"
-                />
+                <svg class="color figa" width="18" height="18 ">
+                  <use href="./image/sprite/icons.svg#icon-figa"></use>
+                </svg>
               </div>
               <h3>Design surveys</h3>
               <p>Sports betting, lottery and bingo playing for the fun</p>
             </li>
             <li>
               <div class="cursor-conteiner">
-                <img
-                  class="heart color"
-                  src="./image/main/icon/heart.svg"
-                  alt="heart-icon"
-                />
+                <svg class="color heart" width="16" height="18">
+                  <use href="./image/sprite/icons.svg#icon-heart"></use>
+                </svg>
               </div>
               <h3>Preference tests</h3>
               <p>The Myspace page defines the individual.</p>
             </li>
             <li>
               <div class="cursor-conteiner">
-                <img
-                  class="load color"
-                  src="./image/main/icon/load.svg"
-                  alt="load-icon"
-                />
+                <svg class="color load" width="14" height="18">
+                  <use href="./image/sprite/icons.svg#icon-load"></use>
+                </svg>
               </div>
               <h3>Five second tests</h3>
               <p>Personal choices and the overall personality of the person.</p>
             </li>
           </ul>
-          <a href="#">SIGN UP NOW</a>
+          <button class="button button-hero" type="button">SIGN UP NOW</button>
         </div>
       </section>
       <!-- #endregion product-built-->
       <!--#region Feature-->
-      <section class="section feature">
-        <div class="container">
-          <h2 class="visually-hidden">Our features ,будет скрыт</h2>
+      <section class="feature-section">
+        <div class="container feature-container">
+          <h2 class="visually-hidden">Our features</h2>
           <ul>
             <li class="management-container">
-              <div>
-                <h4>Effortless Validation for</h4>
-                <h3>Management</h3>
-                <p>
+              <div class="feature">
+                <h4 class="feature-title-valid">Effortless Validation for</h4>
+                <h2 class="feature-title-manage">Management</h2>
+                <p class="feature-space">
                   The Myspace page defines the individual, his or her
                   characteristics, traits, personal choices and the overall
                   personality of the person.
                 </p>
 
                 <ul>
-                  <li class="accessory-container">
-                    <h4>Accessory makers</h4>
-                    <p>
+                  <li>
+                    <h4 class="feature-title">Accessory makers</h4>
+                    <p class="feature-text">
                       While most people enjoy casino gambling, sports betting,
                       lottery and bingo playing for the fun
                     </p>
                   </li>
-                  <li class="alterationists-container">
-                    <h4>Alterationists</h4>
-                    <p>
+                  <li>
+                    <h4 class="feature-title">Alterationists</h4>
+                    <p class="feature-text">
                       If you are looking for a new way to promote your business
                       that won’t cost you more money,
                     </p>
@@ -192,9 +175,9 @@
 
             <li class="customers-conteiner">
               <div class="custumers">
-                <h4>Easier decision making for</h4>
-                <h3>Customer Support</h3>
-                <p>
+                <h4 class="feature-title-valid">Easier decision making for</h4>
+                <h2 class="feature-title-manage">Customer Support</h2>
+                <p class="feature-space">
                   The Myspace page defines the individual, his or her
                   characteristics, traits, personal choices and the overall
                   personality of the person.
@@ -202,85 +185,15 @@
 
                 <ul>
                   <li>
-                    <svg
-                      width="36"
-                      height="35"
-                      viewBox="0 0 36 35"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        fill="#FF9900"
-                      />
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        stroke="white"
-                        stroke-width="2.91667"
-                      />
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        stroke="#FF9900"
-                        stroke-width="2.91667"
-                      />
-                      <path
-                        d="M25.8136 12.2393C25.5007 11.9202 24.9932 11.9202 24.6802 12.2393L15.0779 22.0277L11.3869 18.2653C11.0739 17.9462 10.5665 17.9462 10.2534 18.2653C9.94042 18.5843 9.94042 19.1016 10.2534 19.4207L14.5111 23.7608C14.824 24.0798 15.3318 24.0796 15.6446 23.7608L25.8136 13.3947C26.1267 13.0757 26.1266 12.5584 25.8136 12.2393Z"
-                        fill="white"
-                      />
+                    <svg width="35" height="35">
+                      <use href="./image/sprite/icons.svg#icon-yellow-ok"></use>
                     </svg>
                     <p>Never worry about overpaying for your energy again.</p>
                   </li>
 
                   <li>
-                    <svg
-                      width="36"
-                      height="35"
-                      viewBox="0 0 36 35"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        fill="#F03E3D"
-                      />
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        stroke="white"
-                        stroke-width="2.91667"
-                      />
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        stroke="#F03E3D"
-                        stroke-width="2.91667"
-                      />
-                      <path
-                        d="M25.8136 12.2393C25.5007 11.9202 24.9932 11.9202 24.6802 12.2393L15.0779 22.0277L11.3869 18.2653C11.0739 17.9462 10.5665 17.9462 10.2534 18.2653C9.94042 18.5843 9.94042 19.1016 10.2534 19.4207L14.5111 23.7608C14.824 24.0798 15.3318 24.0796 15.6446 23.7608L25.8136 13.3947C26.1267 13.0757 26.1266 12.5584 25.8136 12.2393Z"
-                        fill="white"
-                      />
+                    <svg width="35" height="35">
+                      <use href="./image/sprite/icons.svg#icon-red-ok"></use>
                     </svg>
                     <p>
                       We will only switch you to energy companies that we trust
@@ -289,43 +202,8 @@
                   </li>
 
                   <li>
-                    <svg
-                      width="36"
-                      height="35"
-                      viewBox="0 0 36 35"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        fill="#4D8DFF"
-                      />
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        stroke="white"
-                        stroke-width="2.91667"
-                      />
-                      <rect
-                        x="1.45833"
-                        y="1.45833"
-                        width="32.1483"
-                        height="32.0833"
-                        rx="12.3958"
-                        stroke="#4D8DFF"
-                        stroke-width="2.91667"
-                      />
-                      <path
-                        d="M25.8136 12.2393C25.5007 11.9202 24.9932 11.9202 24.6802 12.2393L15.0779 22.0277L11.3869 18.2653C11.0739 17.9462 10.5665 17.9462 10.2534 18.2653C9.94042 18.5843 9.94042 19.1016 10.2534 19.4207L14.5111 23.7608C14.824 24.0798 15.3318 24.0796 15.6446 23.7608L25.8136 13.3947C26.1267 13.0757 26.1266 12.5584 25.8136 12.2393Z"
-                        fill="white"
-                      />
+                    <svg width="35" height="35">
+                      <use href="./image/sprite/icons.svg#icon-blue-ok"></use>
                     </svg>
                     <p>
                       We track the markets daily and know where the savings are.
@@ -342,10 +220,10 @@
             </li>
 
             <li class="management-container">
-              <div>
-                <h4>Optimisation for</h4>
-                <h3>Collaborative</h3>
-                <p>
+              <div class="feature">
+                <h4 class="feature-title-valid">Optimisation for</h4>
+                <h2 class="feature-title-manage">Collaborative</h2>
+                <p class="feature-space">
                   Few would argue that, despite the advancements of feminism
                   over the past three decades, women still face a double
                   standard when it comes to their behavior.
@@ -353,16 +231,16 @@
 
                 <ul>
                   <li class="accessory-container">
-                    <h4>Accessory makers</h4>
-                    <p>
+                    <h4 class="feature-title">Accessory makers</h4>
+                    <p class="feature-text">
                       While most people enjoy casino gambling, sports betting,
                       lottery and bingo playing for the fun
                     </p>
                   </li>
 
                   <li class="alterationists-container">
-                    <h4>Alterationists</h4>
-                    <p>
+                    <h4 class="feature-title">Alterationists</h4>
+                    <p class="feature-text">
                       If you are looking for a new way to promote your business
                       that won’t cost you more money,
                     </p>
@@ -382,96 +260,104 @@
       </section>
       <!-- #endregion Feature-->
       <!--#region staff -->
-      <section class="section staff">
-        <div class="container">
-          <h2>Quick & Easy Process</h2>
-          <p>
+      <section class="staff-section">
+        <div class="container staff-conteiner">
+          <h2 class="staff-title">Quick & Easy Process</h2>
+          <p class="staff-text">
             Do you require some help for your project: Conception workshop,
             prototyping, marketing strategy, landing page, Ux/UI?
           </p>
 
           <ul class="staff-list">
-            <li>
+            <li class="staff-list-li">
               <img
                 src="./image/main/staff/avatar-gerl.jpg"
                 alt="avatar-gerl"
-                width="98px"
-                height="98px"
+                width="98"
+                height="98"
               />
               <p>I can take care of your pitch</p>
             </li>
-            <li>
+            <li class="staff-list-li">
               <p>I can prototype your app</p>
               <img
                 src="./image/main/staff/avatar-old-woman.jpg"
                 alt="avatar-old-woman"
-                width="98px"
-                height="98px"
+                width="98"
+                height="98"
               />
             </li>
 
-            <li>
+            <li class="staff-list-li">
               <p>I can take care of your pitch</p>
               <img
                 src="./image/main/staff/avatar-boy.jpg"
                 alt="avatar-boy"
-                width="98px"
-                height="98px"
+                width="98"
+                height="98"
               />
             </li>
-            <li>
+            <li class="staff-list-li">
               <img
                 src="./image/main/staff/avatar-men.jpg"
                 alt="avatar-men"
-                width="98px"
-                height="98px"
+                width="98"
+                height="98"
               />
               <p>I can help marketing strategy</p>
             </li>
           </ul>
-          <button type="button">Contact our expert</button>
+          <button class="button staff-button" type="button">
+            Contact our expert
+          </button>
         </div>
       </section>
       <!--#endregion staff -->
       <!--#region strategies -->
 
-      <section class="section strategies">
-        <div class="container">
-          <h2>Contents Strategies</h2>
-          <p class="strategies-p">
+      <section class="strategies-section">
+        <div class="container strategies-container">
+          <h2 class="strategies-title">Contents Strategies</h2>
+          <p class="strategies-container-p">
             We focus on ergonomics and meeting you where you work. It's only a
             keystroke away.
           </p>
-          <ul>
+          <ul class="strategies-container-ul">
             <li>
               <img
                 src="./image/main/contents-strategies/dektop.jpg"
-                alt="dektop"
-                width="350px"
-                height="185px"
+                alt="desktop"
+                width="350"
+                height="185"
               />
-              <p>By <span>Wahid Ari</span> | 03 March 2019</p>
-              <h3>Increasing Prosperity With Positive Thinking</h3>
+              <div class="strategies-container-card">
+                <p>By <span>Wahid Ari</span> | 03 March 2019</p>
+                <h3>Increasing Prosperity With Positive Thinking</h3>
+              </div>
             </li>
             <li>
               <img
                 src="./image/main/contents-strategies/success.jpg"
                 alt="success"
-                width="350px"
-                height="185px"
+                width="350"
+                height="185"
               />
-              <p>By <span>Wahid Ari</span> | 03 March 2019</p>
-              <h3 class="h-green">Motivation Is The First Step To Success</h3>
+              <div class="strategies-container-card">
+                <p>By <span>Wahid Ari</span> | 03 March 2019</p>
+                <h3 class="h-green">Motivation Is The First Step To Success</h3>
+              </div>
             </li>
             <li>
               <img
                 src="./image/main/contents-strategies/business.jpg"
                 alt="business"
-                width="350px"
-                height="185px"
+                width="350"
+                height="185"
               />
-              <p>By <span>Wahid Ari</span> | 03 March 2019</p>
-              <h3>Success Steps For Your Personal Or Business</h3>
+              <div class="strategies-container-card">
+                <p>By <span>Wahid Ari</span> | 03 March 2019</p>
+                <h3>Success Steps For Your Personal Or Business</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -479,188 +365,254 @@
       <!--#endregion strategies -->
       <!--#region Price -->
 
-      <section class="section price">
-        <div class="container">
-          <h2>Price Table</h2>
-          <p class="price-p">We offer competitive price</p>
+      <section class="price-section">
+        <div class="container price-container">
+          <h2 class="price-title">Price Table</h2>
+          <p class="price-text">We offer competitive price</p>
+          <ul class="price-list">
+            <li class="price-item">
+              <h3 class="price-item-title">Free</h3>
+              <h4 class="price-item-text">Brief price description</h4>
+              <div class="pricing-card">
+                <span class="price">0<span class="currency">$</span></span>
+                <span class="per-month">Per / month</span>
+              </div>
 
-          <ul>
-            <li>
-              <h3>Free</h3>
-              <p>Brief price description</p>
-              <span>0 $ Per / month</span>
-
-              <ul>
+              <ul class="price-option">
                 <li>Only 2 Operators</li>
                 <li>Notifications</li>
                 <li>Landing Pages</li>
               </ul>
 
-              <button type="button">Order Now</button>
+              <button class="button price-button" type="button">
+                Order Now
+              </button>
             </li>
 
-            <li>
-              <h3>Standard</h3>
-              <p>Brief price description</p>
-              <span>5 $ Per / month</span>
-
-              <ul>
+            <li class="price-item green-item">
+              <h3 class="price-item-title">Standard</h3>
+              <h4 class="price-item-text">Brief price description</h4>
+              <div class="pricing-card">
+                <span class="price price-green"
+                  >5<span class="currency price-white">$</span></span
+                >
+                <span class="per-month">Per / month</span>
+              </div>
+              <ul class="price-option">
                 <li>5+ Operators</li>
                 <li>Notifications</li>
                 <li>Landing Pages</li>
               </ul>
 
-              <button type="button">Order Now</button>
+              <button class="button price-button white-button">
+                Order Now
+              </button>
             </li>
 
-            <li>
-              <h3>Premium</h3>
-              <p>Brief price description</p>
-              <span>10 $ Per / month</span>
+            <li class="price-item">
+              <h3 class="price-item-title">Premium</h3>
+              <h4 class="price-item-text">Brief price description</h4>
+              <div class="pricing-card">
+                <span class="price">10<span class="currency">$</span></span>
+                <span class="per-month">Per / month</span>
+              </div>
 
-              <ul>
+              <ul class="price-option">
                 <li>10+ Operators</li>
                 <li>Notifications</li>
                 <li>Landing Pages</li>
               </ul>
 
-              <button type="button">Order Now</button>
+              <button class="button price-button">Order Now</button>
             </li>
           </ul>
         </div>
       </section>
       <!-- #endregion Price -->
       <!--#region feedback -->
-      <section class="section feedback">
-        <div class="container">
-          <h2>What Clients Say</h2>
-          <p>
-            Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics
+      <section class="feedback-section">
+        <div class="container feedback-container">
+          <h2 class="feedback-title">What Clients Say</h2>
+          <p class="feedback-text">
+            Problems trying to resolve the conflict between <br />
+            the two major realms of Classical physics: Newtonian mechanics
           </p>
-          <ul>
-            <li>
-              <p>
-                Product helps you see how many more days you need to work to
-                reach your financial goal. Product helps you see how many more
-                days you need to work to reach your financial goal. Product
-                helps you see how many more days you need to work to reach your
-                financial goal.
-              </p>
+          <div class="feedback-conteiner-card">
+            <div class="feedback-card">
+              <div class="feedback-stars">
+                <svg class="" width="108" height="18">
+                  <use href="./image/sprite/icons.svg#icon-stars"></use>
+                </svg>
+                <p class="feedback-stars-text">
+                  Product helps you see how many more days you need to work to
+                  reach your financial goal.
+                </p>
+              </div>
+              <div class="feedback-designer">
+                <img
+                  src="./image/main/feedback/woman.jpg"
+                  alt="woman"
+                  width="50"
+                />
+                <div>
+                  <h4>Wahid Ari</h4>
+                  <p>Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <div class="feedback-stars">
+                <svg width="108" height="18">
+                  <use href="./image/sprite/icons.svg#icon-stars"></use>
+                </svg>
 
-              <ul>
-                <li><img src="" alt="" /></li>
-                <li><p>Wahid Ari</p></li>
-                <li>Designer</li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                Product helps you see how many more days you need to work to
-                reach your financial goal. Product helps you see how many more
-                days you need to work to reach your financial goal. Product
-                helps you see how many more days you need to work to reach your
-                financial goal.
-              </p>
-
-              <ul>
-                <li><img src="" alt="" /></li>
-                <li><p>Wahid Ari</p></li>
-                <li>Designer</li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                Product helps you see how many more days you need to work to
-                reach your financial goal. Product helps you see how many more
-                days you need to work to reach your financial goal. Product
-                helps you see how many more days you need to work to reach your
-                financial goal.
-              </p>
-
-              <ul>
-                <li><img src="" alt="" /></li>
-                <li><p>Wahid Ari</p></li>
-                <li>Designer</li>
-              </ul>
-            </li>
-          </ul>
+                <p class="feedback-stars-text">
+                  Product helps you see how many more days you need to work to
+                  reach your financial goal.
+                </p>
+              </div>
+              <div class="feedback-designer">
+                <img src="./image/main/feedback/man.jpg" alt="man" width="50" />
+                <div>
+                  <h4>Wahid Ari</h4>
+                  <p>Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <div class="feedback-stars">
+                <svg width="108" height="18">
+                  <use href="./image/sprite/icons.svg#icon-stars"></use>
+                </svg>
+                <p class="feedback-stars-text">
+                  Product helps you see how many more days you need to work to
+                  reach your financial goal.
+                </p>
+              </div>
+              <div class="feedback-designer">
+                <img
+                  src="./image/main/feedback/old-man.jpg"
+                  alt="old-man"
+                  width="50"
+                />
+                <div>
+                  <h4>Wahid Ari</h4>
+                  <p>Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- #endregion feedback-->
       <!--#region promo -->
-      <section class="section promo">
-        <div class="container">
-          <h2>Join 100 Compannies who boost their business with Product</h2>
-          <button type="button">Get This</button>
+      <section class="section-promo">
+        <div class="container promo-container">
+          <div class="title-conteiner">
+            <h2 class="promo-title">
+              Join 100 Compannies who boost their business with Product
+            </h2>
+            <button class="button promo-button" type="button">Get This</button>
+          </div>
           <img
             src="./image/main/promo/screen.svg"
             alt="screen"
-            width="351px"
-            height="331px"
+            width="351"
+            height="331"
           />
         </div>
       </section>
       <!--#endregion promo -->
     </main>
+    <!-- #region footer -->
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html"
-          ><img
-            src="./image/header/logo.svg"
-            alt="logo"
-            width="40"
-            height="36"
-          />Product
-        </a>
-        <ul>
-          <li>
-            <a
-              href="instagram.com"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >instagram
-            </a>
-          </li>
-          <li>
-            <a
-              href="facebook.com"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >facebook</a
-            >
-          </li>
-          <li>
-            <a
-              href="twitter.com"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >twitter</a
-            >
-          </li>
-        </ul>
-        <nav>
-          <p>Resource</p>
-          <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">FAQ</a></li>
+      <div class="container footer-container">
+        <div class="footer-logo-container">
+          <a class="logo" href="./index.html"
+            ><img
+              src="./image/header/logo.svg"
+              alt="logo"
+              width="40"
+              height="36"
+            />Product
+          </a>
+          <ul class="footer-icon-list">
+            <li>
+              <a
+                class="footer-icon"
+                href="instagram.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                ><svg width="40" height="40">
+                  <use
+                    href="./image/sprite/icons.svg#icon-instagram-footer"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-icon"
+                href="facebook.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                ><svg width="40" height="40">
+                  <use
+                    href="./image/sprite/icons.svg#icon-facebook-footer"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-icon"
+                href="twitter.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                ><svg width="40" height="40">
+                  <use href="./image/sprite/icons.svg#icon-twitter-ok"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-          <p>Legal Stuff</p>
-          <ul>
-            <li><a href="">Disclaimer</a></li>
-            <li><a href="">Financing</a></li>
-            <li><a href="">Privacy Policy</a></li>
-          </ul>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-resource">
+            <p class="footer-resource-p">Resource</p>
+            <ul class="footer-resource-list">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-resource">
+            <p class="footer-resource-p">Legal Stuff</p>
+            <ul class="footer-resource-list legal">
+              <li><a href="">Disclaimer</a></li>
+              <li><a href="">Financing</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
         </nav>
-        <p>knowing you're always on the best energy deal.</p>
-        <form>
-          Тут буде інпут
-          <button type="submit">Sign up Now</button>
-        </form>
-        <p>Made With Love By Figmaland All Right Reserved</p>
+        <div class="footer-conteiner-input">
+          <p class="footer-resource-p">
+            knowing you're always on the best energy deal.
+          </p>
+          <form class="footer-form">
+            <div class="input-container">
+              <svg class="input-icon" width="18" height="28">
+                <use href="./image/sprite/icons.svg#icon-form-mobile"></use>
+              </svg>
+              <input type="text" placeholder="Enter your phone number" />
+              <button class="button footer-button" type="submit">
+                Sign up Now
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+    <p class="figmaland">Made With Love By Figmaland All Right Reserved</p>
   </body>
 </html>
