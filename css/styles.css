@@ -805,12 +805,18 @@ p {
   font-size: 16px;
   border: 1px solid #bcd0e5;
   border-radius: 4px;
-  transition: border-color 0.3s;
-  background: #fff;
+  transition: border 0.3s;
+  background-color: #fff;
+  outline: none;
 }
 
 .input-container input::placeholder {
   color: #02897a;
+}
+
+.input-container input:hover,
+.input-container input:focus {
+  border: 1px solid #02897a;
 }
 
 .footer-button {
@@ -1080,7 +1086,7 @@ p {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 76px;
-  line-height: 1.31579;
+  line-height: 1.31;
   letter-spacing: 0em;
   text-align: center;
   color: #02897a;
@@ -1098,7 +1104,7 @@ p {
 .pricing-change-period {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.1875;
+  line-height: 1.18;
   letter-spacing: 0.01em;
   color: #afafaf;
 }
